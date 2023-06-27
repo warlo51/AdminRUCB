@@ -49,7 +49,7 @@ export default {
     {
       name: 'active',
       type: 'string',
-      title: 'Activer',
+      title: 'Activer sur la page Actualités',
       options: {
         list: [
           { title: 'Oui', value: 'Oui' },

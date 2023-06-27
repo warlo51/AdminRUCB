@@ -9,9 +9,10 @@ export default {
       title: 'Titre'
     },
     {
-      name: 'lien',
-      type: 'string',
-      title: 'Lien Article Actualite'
+      name: 'linkArticle',
+      type: 'reference',
+      title: 'Lien Article Actualite',
+      to: {type: 'actus'}
     },
     {
       name: 'active',

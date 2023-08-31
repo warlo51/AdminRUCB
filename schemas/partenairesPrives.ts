@@ -9,6 +9,11 @@ export default {
       title: 'Nom'
     },
     {
+      name: 'lien site web',
+      type: 'string',
+      title: 'Site'
+    },
+    {
       name: 'image',
       type: 'image',
       options: {

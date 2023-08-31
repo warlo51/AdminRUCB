@@ -9,7 +9,7 @@ export default {
       title: 'Nom'
     },
     {
-      name: 'lien site web',
+      name: 'site',
       type: 'string',
       title: 'Site'
     },

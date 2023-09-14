@@ -41,7 +41,7 @@ export default {
     {
       name: 'active',
       type: 'string',
-      title: 'Activer sur la page Actualités',
+      title: 'Activer sur la page Temoignages',
       options: {
         list: [
           { title: 'Oui', value: 'Oui' },

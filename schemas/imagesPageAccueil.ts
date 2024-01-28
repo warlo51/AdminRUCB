@@ -1,12 +1,13 @@
 export default {
   name: 'imagesPageAccueil',
   type: 'document',
-  title: 'Images Page Accueil',
+  title: 'Images Bandeau Déroulant Accueil',
   fields: [
     {
       name: 'titre',
       type: 'string',
-      title: 'Titre'
+      title: 'Titre',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'linkArticle',
@@ -28,6 +29,7 @@ export default {
     {
       name: 'image',
       type: 'image',
+      validation: (Rule) => Rule.required(),
       options: {
         hotspot: true
       },
@@ -36,17 +38,20 @@ export default {
     {
       name: 'colorTexte',
       title: 'Couleur texte',
-      type: 'color'
+      type: 'simplerColor',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'colorBackgroundButton',
       title: 'Couleur Fond Button',
-      type: 'color'
+      type: 'simplerColor',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'colorTextButton',
       title: 'Couleur Texte Button',
-      type: 'color'
+      type: 'simplerColor',
+      validation: (Rule) => Rule.required(),
     }
   ]
 }

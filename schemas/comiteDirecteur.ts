@@ -1,27 +1,31 @@
 export default {
   name: 'comiteDirecteur',
   type: 'document',
-  title: 'Comite Directeur',
+  title: 'Page Comite Directeur',
   fields: [
     {
       name: 'nom',
       type: 'string',
-      title: 'Nom'
+      title: 'Nom',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'phone',
       type: 'string',
-      title: 'Telephone'
+      title: 'Telephone',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'email',
       type: 'string',
-      title: 'Email'
+      title: 'Email',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'colorTitre',
       title: 'Couleur Titre',
-      type: 'color'
+      type: 'simplerColor',
+      validation: (Rule) => Rule.required(),
     },
   ]
 }

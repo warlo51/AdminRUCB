@@ -15,8 +15,11 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/client": "^6.11.1",
     "@sanity/color-input": "^3.1.0",
     "@sanity/icons": "^2.1.0",
+    "@sanity/preview-kit": "^5.0.11",
+    "@sanity/scheduled-publishing": "^1.2.4",
     "@sanity/ui": "^1.2.0",
     "@sanity/vision": "^3.12.2",
     "color-picker": "^0.0.1",
@@ -24,6 +27,7 @@
     "react-dom": "^18.2.0",
     "react-is": "^18.2.0",
     "sanity": "^3.12.2",
+    "sanity-plugin-simpler-color-input": "^2.1.0",
     "styled-components": "^5.3.9"
   },
   "devDependencies": {

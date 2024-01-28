@@ -1,22 +1,25 @@
 export default {
   name: 'formations',
   type: 'document',
-  title: 'Onglet Formations',
+  title: 'Page Formations',
   fields: [
     {
       name: 'titre',
       type: 'string',
-      title: 'Titre'
+      title: 'Titre',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'colorTitre',
       title: 'Couleur Titre',
-      type: 'color'
+      type: 'simplerColor',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'description',
       type: 'array',
       title: 'Description',
+      validation: (Rule) => Rule.required(),
       of: [
         {
           type: 'block',

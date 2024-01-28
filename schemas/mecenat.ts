@@ -1,17 +1,19 @@
 export default {
   name: 'mecenat',
   type: 'document',
-  title: 'Mecenat',
+  title: 'Page Mecenat',
   fields: [
     {
       name: 'titre',
       type: 'string',
-      title: 'Titre'
+      title: 'Titre',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'colorTitre',
       title: 'Couleur Titre',
-      type: 'color'
+      type: 'simplerColor',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'image',
@@ -25,6 +27,7 @@ export default {
       name: 'description',
       type: 'array',
       title: 'Description',
+      validation: (Rule) => Rule.required(),
       of: [
         {
           type: 'block',

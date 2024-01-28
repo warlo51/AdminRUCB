@@ -1,21 +1,24 @@
 export default {
   name: 'partenairesPublic',
   type: 'document',
-  title: 'Partenaires Public',
+  title: 'Liste des Partenaires Public',
   fields: [
     {
       name: 'nom',
       type: 'string',
-      title: 'Nom'
+      title: 'Nom',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'site',
       type: 'string',
-      title: 'Site'
+      title: 'Site',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'image',
       type: 'image',
+      validation: (Rule) => Rule.required(),
       options: {
         hotspot: true
       },

@@ -1,17 +1,19 @@
 export default {
   name: 'actus',
   type: 'document',
-  title: 'Actus',
+  title: 'Page actualités',
   fields: [
     {
       name: 'titre',
       type: 'string',
-      title: 'Titre'
+      title: 'Titre',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'colorTitre',
       title: 'Couleur Titre',
-      type: 'color'
+      type: 'simplerColor',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'image',
@@ -19,12 +21,14 @@ export default {
       options: {
         hotspot: true
       },
-      title: 'Image'
+      title: 'Image',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'description',
       type: 'array',
       title: 'Description',
+      validation: (Rule) => Rule.required(),
       of: [
         {
           type: 'block',
